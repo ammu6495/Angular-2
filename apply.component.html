@@ -1,0 +1,21 @@
+
+<div>
+  <form #f="ngForm" (submit)="Register(f)">
+  <table>
+<tr>
+  <td><label>Name</label></td>
+  <td><input type="text" name="name" placeholder="enter ur name" id="name" [(ngModel)]="student.name"></td>
+</tr>
+<tr>
+  <td><label>Username</label></td>
+  <td><input type="text" name="uname" placeholder="enter username" id="username" [(ngModel)]="student.username"></td>
+</tr>
+<tr>
+    <td><label>Password</label></td>
+    <td><input type="text" name="password" placeholder="enter password" id="password" [(ngModel)]="student.password"></td>
+  </tr>
+  <td><input type="submit" value="Register" name="button"></td>
+  </table>
+</form>
+ 
+</div>
